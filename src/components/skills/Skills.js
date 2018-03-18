@@ -59,6 +59,11 @@ const Skills = (props) => {
         skills
     } = props;
     
+    if (!skills.length)
+    {
+        return null;
+    }
+    
     return (
         <div id="skills" style={styles.mainDiv}>
             <Title isSize={4}>

@@ -1,6 +1,6 @@
 {
   "name": "react-bulma-vitae",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Build a great looking personal resume in seconds with JSON resumes, React and the Bulma css framework.",
   "main": "lib/index.js",
   "module": "es/index.js",

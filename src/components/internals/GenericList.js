@@ -36,6 +36,11 @@ const GenericList = (props) => {
         ...rest
     } = props;
     
+    if (!items.length)
+    {
+        return null;
+    }
+    
     return (
         <Card {...rest}>
             <CardHeader>

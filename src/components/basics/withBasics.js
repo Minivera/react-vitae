@@ -20,7 +20,7 @@ const withBasics = Component => {
             }
         });
     
-        return <Component {...props} basics={schema.basics} availableMenus={menus}/>;
+        return <Component {...props} basics={schema.basics} availableSections={menus}/>;
     };
     
     Wrapper.displayName = `withBasics(${Component.displayName || Component.name})`;

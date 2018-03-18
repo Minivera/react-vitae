@@ -1,7 +1,7 @@
 {
   "name": "react-bulma-vitae",
-  "version": "1.0.0",
-  "description": "react-bulma-vitae React component",
+  "version": "0.0.1",
+  "description": "Build a great looking personal resume in seconds with JSON resumes, React and the Bulma css framework.",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -16,7 +16,8 @@
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
-    "test:watch": "nwb test-react --server"
+    "test:watch": "nwb test-react --server",
+    "deploy": "nwb build-demo && gh-pages -d demo/dist"
   },
   "dependencies": {},
   "peerDependencies": {
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "bloomer": "^0.6.3",
+    "gh-pages": "^1.1.0",
     "nwb": "0.21.x",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

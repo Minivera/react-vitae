@@ -59,7 +59,7 @@ const styles = {
 const BasicsSection = (props) => {
     const { 
         basics, 
-        availableMenus, 
+        availableSections, 
         onMenuLinkClick,
         activeSection,
         children,
@@ -95,7 +95,7 @@ const BasicsSection = (props) => {
             <ModifiedDivider style={styles.divider} isHidden={['tablet', 'desktop', 'widescreen']}/>
             <Level isDisplay="flex-mobile" isHidden={['tablet', 'desktop', 'widescreen']}
                 style={styles.levelMenu}>
-                {availableMenus.map((menu) => (
+                {availableSections.map((menu) => (
                     <LevelItem href={`#${menu}`} hasTextAlign="centered" onClick={() => onMenuLinkClick(menu)}
                         style={{...styles.levelMenuItem, ...(activeSection === menu ? styles.activeItem : {})}} 
                         hasTextColor={activeSection === menu ? 'white' : 'dark'} key={menu}>
@@ -122,14 +122,14 @@ const BasicsSection = (props) => {
 
 BasicsSection.propTypes = {
     basics: PropTypes.shape({}),
-    availableMenus: PropTypes.arrayOf(PropTypes.oneOf(defines.sections)),
+    availableSections: PropTypes.arrayOf(PropTypes.oneOf(defines.sections)),
     onMenuLinkClick: PropTypes.func,
     activeSection: PropTypes.string
 };
 
 BasicsSection.defaultProps = {
     basics: {},
-    availableMenus: [],
+    availableSections: [],
     onMenuLinkClick: () => {},
     activeSection: 'basics'
 };

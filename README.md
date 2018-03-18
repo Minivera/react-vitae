@@ -27,9 +27,10 @@ When using the base `Resume` component, you will see your resume in this [templa
 npm install react-bumla-vitae --save
 ```
 
-- Include the Bulma CSS somewhere in you page
-- 
+- Include the Bulma CSS anhd font awesome icons somewhere in you page
+
 > Install with npm `npm install bulma` or with the [CDN](https://cdnjs.com/libraries/bulma)
+Install Font awesome from the [font awesome website](https://fontawesome.com/get-started).
 
 - Create and validate your [resume's JSON schema](https://jsonresume.org/getting-started/) 
 

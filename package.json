@@ -31,11 +31,16 @@
     "react-dom": "^16.2.0",
     "react-tippy": "^1.2.2"
   },
-  "author": "",
-  "homepage": "",
+  "author": "minivera",
+  "homepage": "https://minivera.github.io/react-bulma-vitae/",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/Minivera/react-bulma-vitae",
   "keywords": [
-    "react-component"
+    "react-component",
+    "resume",
+    "cv",
+    "JSON resume",
+    "bulma",
+    "javascript"
   ]
 }

@@ -22,19 +22,13 @@ When using the base `Resume` component, you will see your resume in this [templa
 
 ## How to use
 1. Install React Bulma Vitae
-
 ```
 npm install react-bumla-vitae --save
 ```
-
 2. Include the Bulma CSS somewhere in you page
-
-Install with npm `npm install bulma` or with the [CDN](https://cdnjs.com/libraries/bulma)
-
+> Install with npm `npm install bulma` or with the [CDN](https://cdnjs.com/libraries/bulma)
 3. Create and validate your [resume's JSON schema](https://jsonresume.org/getting-started/) 
-
 4. Import the Resume component and provide it with your schema
-
 ```javascript
 import { Resume } from 'react-bulma-vitae';
 
@@ -50,7 +44,7 @@ const Example = (props) => {
 ## Customize
 The basic `Resume` component will provide you with a basic template to get you started, however, it is perfectly possible to customize the template.
 
-If you provide a children to the `Resume` component, it will render your own code rather than the base template. It will also provide you with Higher Order Components to subscribe to the schema's content.
+If you provide children to the `Resume` component, it will render your own code rather than the base template. It will also provide you with Higher Order Components to subscribe to the schema's content.
 
 ### Helper Higher Order Components
 

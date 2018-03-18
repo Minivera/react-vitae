@@ -100,7 +100,7 @@ class Resume extends Component {
                     <Container>
                         <Content>
                             <p>
-                                Made with <a>react-bulma-vitae</a>
+                                Made with <a href="https://github.com/Minivera/react-bulma-vitae">react-bulma-vitae</a>
                             </p>
                         </Content>
                     </Container>

@@ -9,8 +9,9 @@ module.exports = {
     umd: {
       global: 'react-bulma-vitae',
       externals: {
-        react: 'React',
-        bloomer: 'Bloomer'
+        'react': 'React',
+        'bloomer': 'Bloomer',
+        'react-tippy': 'ReactTippy'
       }
     }
   }

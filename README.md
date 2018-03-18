@@ -21,14 +21,19 @@ The libary uses [Bloomer](https://bloomer.js.org) and [react-tippy](https://gith
 When using the base `Resume` component, you will see your resume in this [template](https://minivera.github.io/react-bulma-vitae/).
 
 ## How to use
-1. Install React Bulma Vitae
+- Install React Bulma Vitae
+
 ```
 npm install react-bumla-vitae --save
 ```
-2. Include the Bulma CSS somewhere in you page
+
+- Include the Bulma CSS somewhere in you page
+- 
 > Install with npm `npm install bulma` or with the [CDN](https://cdnjs.com/libraries/bulma)
-3. Create and validate your [resume's JSON schema](https://jsonresume.org/getting-started/) 
-4. Import the Resume component and provide it with your schema
+
+- Create and validate your [resume's JSON schema](https://jsonresume.org/getting-started/) 
+
+- Import the Resume component and provide it with your schema
 ```javascript
 import { Resume } from 'react-bulma-vitae';
 

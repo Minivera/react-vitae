@@ -100,7 +100,7 @@ class Resume extends Component {
                     <Container>
                         <Content>
                             <p>
-                                Made with by <a>react-bulma-vitae</a>
+                                Made with <a>react-bulma-vitae</a>
                             </p>
                         </Content>
                     </Container>

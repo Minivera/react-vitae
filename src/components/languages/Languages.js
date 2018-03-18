@@ -37,6 +37,11 @@ const Languages = (props) => {
         languages
     } = props;
     
+    if (!languages.length)
+    {
+        return null;
+    }
+    
     return (
         <Column isSize="1/2">
             <Card style={{height: '100%'}}>

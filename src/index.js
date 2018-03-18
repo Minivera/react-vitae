@@ -1,9 +1,12 @@
-import React, {Component} from 'react'
+export * from './components/basics';
+export * from './components/work';
+export * from './components/volunteer';
+export * from './components/education';
+export * from './components/awards';
+export * from './components/publications';
+export * from './components/skills';
+export * from './components/languages';
+export * from './components/interests';
+export * from './components/references';
 
-export default class extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
-}
+export { default as Resume } from './Resume.js';

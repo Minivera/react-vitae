@@ -1,30 +1,32 @@
 import * as React from 'react';
 import { render } from '@testing-library/react';
-import 'jest-dom/extend-expect';
 
 import { mockResume } from './mocks';
 import { ResumeProvider, ResumeContext, ProviderParams } from '../src/provider';
-
-const Consumer = (): React.ReactElement<React.ConsumerProps<ProviderParams>> => (
-    <ResumeContext.Consumer>
-        {(value: ProviderParams) => (
-            <input data-testid="context-consumer" value={value.resume && value.resume.basic.name} />
-        )}
-    </ResumeContext.Consumer>
-);
+import { Resume } from '../src';
 
 describe('The <ResumeProvider> component', (): void => {
     const initialProps = {
         resume: mockResume,
     };
 
-    it('Will render its children with the resume context added', (): void => {
-        const { getByTestId } = render(
+    const runContext = (): Resume | undefined => {
+        let contextValue: Resume | undefined;
+
+        render(
             <ResumeProvider {...initialProps}>
-                <Consumer />
+                <ResumeContext.Consumer>
+                    {(value: Partial<ProviderParams>): null => {
+                        contextValue = value.resume;
+                        return null;
+                    }}
+                </ResumeContext.Consumer>
             </ResumeProvider>
         );
+        return contextValue;
+    };
 
-        expect(getByTestId('context-consumer')).toHaveValue(mockResume.basic.name);
+    it('Will render its children with the resume context added', (): void => {
+        expect(runContext()).toEqual(mockResume);
     });
 });

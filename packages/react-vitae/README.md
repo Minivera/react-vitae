@@ -1,5 +1,5 @@
 # React vitae
-![GitHub](https://img.shields.io/github/license/minivera/react-vitae.svg) ![GitHub stars](https://img.shields.io/github/stars/minivera/react-vitae.svg?style=social) [![Build Status](https://travis-ci.com/Minivera/react-vitae.svg?branch=master)](https://travis-ci.com/Minivera/react-vitae)
+![npm](https://img.shields.io/npm/v/react-vitae.svg) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-vitae.svg)
 
 `react-vitae` is a set of strongly typed and battle tested React components and hooks that enable you to connect a [json-resume](https://github.com/jsonresume/resume-schema) schema to your components and build great looking resumes from a standardized schema. 
 
@@ -11,7 +11,7 @@ You can install `react-vitae` with NPM or Yarn.
 
 ## Usage
 
-The main `react-vitae` package includes the [TypeScript types](/packages/react-vitae/src/types.ts) for the standard JSON resume schema and a set of components.
+`react-vitae` includes the [TypeScript types](/packages/react-vitae/src/types.ts) for the standard JSON resume schema and a set of components.
 
 ### Writing the resume file
 
@@ -120,36 +120,25 @@ export const Component = () => (
 );
 ```
 
-## Themes
-
-React-Vitae includes two ready made themes to quickly create resumes with. These themes export a main `Resume` component as well as a smaller set of components to allow you to assemble your resume yourself.
-
-See each theme's readme for instruction on usage and how to install them.
-
-* [react-vitae-bulma-theme](/packages/react-vitae-bulma-theme)
-* [react-vitae-material-theme](/packages/react-vitae-material-theme)
-
-### Help needed
-
-The created templates are still work in progress at this moment. I am not a designer and they look somewhat passable, but help to make them look good would be very appreciated. Feel free to create a PR to improve the look of both templates.
-
 ## Development
 
-### Lerna
+### Installation
 
-This project uses [lerna](https://github.com/lerna/lerna) to manage its monorepo, see the lerna documentation for more commands.
-
-### Installing the dependencies
-
-Running `npm bootstrap` in the project's root directory will install everything you need for development.
+The installation of dependencies is made from the monorepo's root using lerna, see the commands there for more information on dependencies.
 
 ### Running Lint
 
-`npm lint` will run eslint in all packages at once.
+`npm lint` will run eslint in this package.
 
 ### Running Tests
 
-`npm test` will run the tests in all packages at once.
+`npm test` will run the tests in this packages.
+
+### Building
+
+`npm run build` will build the package and create the built files in the `dist` folder.
+
+`npm run clean` will clean the package, removing the cache, `node_modules` and built resources.
 
 ### Publishing
 

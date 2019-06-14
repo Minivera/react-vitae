@@ -1,0 +1,75 @@
+{
+  "name": "react-vitae-bulma-theme",
+  "version": "1.0.0",
+  "description": "The Bulma Theme for react-vitae, build resumes using the bloomer framework and react-vitae.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Minivera/react-vitae.git"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production tsdx build",
+    "start": "parcel example/index.html --open",
+    "lint": "eslint 'src/**/*.{js,ts,jsx,tsx}'",
+    "prepublishOnly": "npm run build",
+    "test": "tsdx test --env=jsdom",
+    "test:coverage": "tsdx test --env=jsdom --coverage",
+    "clean": "git clean -fdX ."
+  },
+  "keywords": [
+    "react",
+    "resume",
+    "json-resume",
+    "bulma",
+    "theme"
+  ],
+  "main": "dist/index.js",
+  "umd:main": "dist/react-vitae-bulma-theme.umd.production.js",
+  "module": "dist/react-vitae-bulma-theme.es.production.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "Guillaume St-Pierre",
+  "license": "MIT",
+  "resolutions": {
+    "@types/react": "16.8.17",
+    "@types/react-dom": "16.8.4"
+  },
+  "peerDependencies": {
+    "bloomer": "^0.6.5",
+    "react": ">=16",
+    "react-vitae": "^1.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^8.0.1",
+    "@types/jest": "^24.0.13",
+    "@types/react": "^16.8.19",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "bloomer": "^0.6.5",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-jest": "^22.6.4",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "jest": "^24.8.0",
+    "jest-dom": "^3.5.0",
+    "parcel-bundler": "^1.12.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-vitae": "^1.0.0",
+    "ts-jest": "^24.0.2",
+    "tsdx": "^0.6.1",
+    "typescript": "^3.4.5"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/react/cleanup-after-each.js"
+    ]
+  }
+}

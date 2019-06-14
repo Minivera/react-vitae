@@ -1,0 +1,13 @@
+export { Resume } from './Resume';
+export { Profiles } from './components/profiles';
+export { Personal } from './components/personal';
+export { Skills } from './components/skills';
+export { Languages } from './components/languages';
+export { Interests } from './components/interests';
+export { References } from './components/references';
+export { WorkList } from './components/work';
+export { VolunteerList } from './components/volunteer';
+export { EducationList } from './components/education';
+export { ProjectsList } from './components/projects';
+export { AwardsList } from './components/awards';
+export { PublicationsList } from './components/publications';

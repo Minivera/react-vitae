@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "baseUrl": ".",
+    "declaration": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["dom", "esnext"],
+    "module": "ESnext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "dist",
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "esnext",
+    "jsx": "react",
+    "types": ["node", "jest"],
+    "paths": {
+      "*": ["node_modules/*"],
+      "react-vitae": ["src/"]
+    }
+  },
+  "include": ["src", "types"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,1 @@
+export { AwardsList } from './AwardsList';

@@ -90,5 +90,5 @@ typings/
 # Distribution
 dist
 
-# IDEs
-.idea
+# tsdx cache
+.rts2_*

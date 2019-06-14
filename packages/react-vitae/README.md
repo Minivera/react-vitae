@@ -13,6 +13,10 @@ You can install `react-vitae` with NPM or Yarn.
 
 `react-vitae` includes the [TypeScript types](/packages/react-vitae/src/types.ts) for the standard JSON resume schema and a set of components.
 
+## Peer dependencies
+
+`react-vitae` requires an installation of `react` version 16 or up.
+
 ### Writing the resume file
 
 The JSON resume repo provides all the tools to create and validate your resume file.

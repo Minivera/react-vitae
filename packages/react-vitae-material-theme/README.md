@@ -1,4 +1,5 @@
 # React vitae Material theme
+
 ![npm](https://img.shields.io/npm/v/react-vitae-material-theme.svg) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-vitae-material-theme.svg)
 
 `react-vitae-material-theme` is the Material Design theme for [react-vitae](https://github.com/Minivera/react-vitae).
@@ -24,9 +25,7 @@ The `Resume` component is a ready made page that will build the entire resume fr
 ```jsx harmony
 import { Resume } from 'react-vitae-material-theme';
 
-const App = () => (
-    <Resume resume={json-resume} />
-);
+const App = () => <Resume resume={json - resume} />;
 ```
 
 ### Individual components
@@ -37,24 +36,22 @@ The package exports individual components used as the building blocks for the ma
 import React from 'react';
 import { ResumeProvider } from 'react-vitae';
 export {
-    Profiles,
-    Personal,
-    Skills,
-    Languages,
-    Interests,
-    References,
-    WorkList,
-    VolunteerList,
-    EducationList,
-    ProjectsList,
-    AwardsList,
-    PublicationsList,
+  Profiles,
+  Personal,
+  Skills,
+  Languages,
+  Interests,
+  References,
+  WorkList,
+  VolunteerList,
+  EducationList,
+  ProjectsList,
+  AwardsList,
+  PublicationsList,
 } from 'react-vitae-material-theme';
 
 export const App = () => (
-    <ResumeProvider resume={resume}>
-        {/* Include any of hte imported components here */}
-    </ResumeProvider>
+  <ResumeProvider resume={resume}>{/* Include any of hte imported components here */}</ResumeProvider>
 );
 ```
 

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Connect resumes written in JSON with Resume.json and React",
   "scripts": {
+    "start": "lerna run start --loglevel debug",
     "postinstall": "lerna bootstrap --no-ci",
     "test": "lerna run test",
     "test:coverage": "lerna run test:coverage",
@@ -19,8 +20,38 @@
     "url": "https://github.com/Minivera/react-vitae/issues"
   },
   "homepage": "https://github.com/Minivera/react-vitae#readme",
+  "resolutions": {
+    "@types/react": "16.8.17",
+    "@types/react-dom": "16.8.4"
+  },
   "devDependencies": {
-    "lerna": "^3.14.1",
-    "prettier": "^1.17.1"
+    "@material-ui/core": "^4.10.1",
+    "@testing-library/react": "^10.0.6",
+    "@types/jest": "^25.2.3",
+    "@types/react": "^16.9.35",
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "bloomer": "^0.6.5",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.13.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.0.1",
+    "jest-dom": "^4.0.0",
+    "lerna": "^3.22.0",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "ts-jest": "^26.1.0",
+    "tsdx": "^0.13.2",
+    "typescript": "^3.9.3"
   }
 }

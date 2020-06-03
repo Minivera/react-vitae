@@ -35,39 +35,11 @@
   "peerDependencies": {
     "react": ">=16"
   },
-  "devDependencies": {
-    "@testing-library/react": "^10.0.6",
-    "@types/jest": "^24.0.13",
-    "@types/react": "^16.8.19",
-    "@typescript-eslint/eslint-plugin": "^1.9.0",
-    "@typescript-eslint/parser": "^1.9.0",
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-config-react": "^1.1.7",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.17.3",
-    "eslint-plugin-jest": "^22.6.4",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-react": "^7.13.0",
-    "eslint-plugin-standard": "^4.0.0",
-    "jest": "^24.8.0",
-    "jest-dom": "^3.5.0",
-    "prettier": "^1.18.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "ts-jest": "^24.0.2",
-    "tsdx": "^0.6.1",
-    "typescript": "^3.4.5"
-  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{ts,tsx}"
     ],
-    "setupFilesAfterEnv": [
-      "@testing-library/react/cleanup-after-each.js"
-    ]
+    "setupFiles": ["@testing-library/react/dont-cleanup-after-each"]
   },
   "gitHead": "7852d3819e85fb4d2909fa41792ec8a03ae6fccd"
 }

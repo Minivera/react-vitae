@@ -8,32 +8,32 @@ import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
 
 export const References: React.FunctionComponent = (): React.ReactElement | null => {
-    const references = useReferences();
+  const references = useReferences();
 
-    if (!references) {
-        return null;
-    }
+  if (!references) {
+    return null;
+  }
 
-    return (
-        <Box>
-            <Typography variant="h5" color="primary">
-                References
-            </Typography>
-            <br />
-            <Table>
-                <TableBody>
-                    {references.map((reference: Reference): React.ReactElement => (
-                        <TableRow>
-                            <TableCell>
-                                <b>{reference.name}</b>
-                            </TableCell>
-                            <TableCell>
-                                {reference.reference}
-                            </TableCell>
-                        </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </Box>
-    );
+  return (
+    <Box>
+      <Typography variant="h5" color="primary">
+        References
+      </Typography>
+      <br />
+      <Table>
+        <TableBody>
+          {references.map(
+            (reference: Reference): React.ReactElement => (
+              <TableRow>
+                <TableCell>
+                  <b>{reference.name}</b>
+                </TableCell>
+                <TableCell>{reference.reference}</TableCell>
+              </TableRow>
+            )
+          )}
+        </TableBody>
+      </Table>
+    </Box>
+  );
 };

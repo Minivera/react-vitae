@@ -1,5 +1,8 @@
 # React vitae
-![GitHub](https://img.shields.io/github/license/minivera/react-vitae.svg) ![GitHub stars](https://img.shields.io/github/stars/minivera/react-vitae.svg?style=social) [![Build Status](https://travis-ci.com/Minivera/react-vitae.svg?branch=master)](https://travis-ci.com/Minivera/react-vitae)
+![GitHub](https://img.shields.io/github/license/minivera/react-vitae.svg)
+![GitHub stars](https://img.shields.io/github/stars/minivera/react-vitae.svg?style=social)
+[![Build Status](https://travis-ci.com/Minivera/react-vitae.svg?branch=master)](https://travis-ci.com/Minivera/react-vitae)
+[![codecov](https://codecov.io/gh/minivera/react-vitae/branch/master/graph/badge.svg)](https://codecov.io/gh/minivera/react-vitae)
 
 `react-vitae` is a set of strongly typed and battle tested React components and hooks that enable you to connect a [json-resume](https://github.com/jsonresume/resume-schema) schema to your components and build great looking resumes from a standardized schema. 
 

@@ -10,19 +10,19 @@ import { AwardsList } from '../awards';
 import { PublicationsList } from '../publications';
 
 export const RightBar: React.FunctionComponent = (): React.ReactElement | null => (
-    <Grid item xs={12} md={7}>
-        <Box display="flex" flexDirection="column" padding={3}>
-            <WorkList />
-            <br />
-            <VolunteerList />
-            <br />
-            <EducationList />
-            <br />
-            <ProjectsList />
-            <br />
-            <AwardsList />
-            <br />
-            <PublicationsList />
-        </Box>
-    </Grid>
+  <Grid item xs={12} md={7}>
+    <Box display="flex" flexDirection="column" padding={3}>
+      <WorkList />
+      <br />
+      <VolunteerList />
+      <br />
+      <EducationList />
+      <br />
+      <ProjectsList />
+      <br />
+      <AwardsList />
+      <br />
+      <PublicationsList />
+    </Box>
+  </Grid>
 );

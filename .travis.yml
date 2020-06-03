@@ -2,7 +2,7 @@ sudo: false
 
 language: node_js
 node_js:
-  - 10.10.0
+  - 12.18.0
 
 stages:
   - test
@@ -14,8 +14,10 @@ jobs:
       name: Run Linters
       script: npm run lint
     - stage: test
-      name: Run tests
-      script: npm run test:coverage
+      name: Run tests and upload coverage
+      script:
+      - npm run test:coverage
+      - bash <(curl -s https://codecov.io/bash)
     - stage: publish
       name: Publish to npm
       script: skip

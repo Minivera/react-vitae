@@ -1,4 +1,5 @@
 # React vitae Bulma theme
+
 ![npm](https://img.shields.io/npm/v/react-vitae-bulma-theme.svg) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-vitae-bulma-theme.svg)
 
 `react-vitae-bulma-theme` is the Bulma theme for [react-vitae](https://github.com/Minivera/react-vitae).
@@ -24,9 +25,7 @@ The `Resume` component is a ready made page that will build the entire resume fr
 ```jsx harmony
 import { Resume } from 'react-vitae-bulma-theme';
 
-const App = () => (
-    <Resume resume={json-resume} />
-);
+const App = () => <Resume resume={json - resume} />;
 ```
 
 ### Individual components
@@ -37,23 +36,21 @@ The package exports individual components used as the building blocks for the ma
 import React from 'react';
 import { ResumeProvider } from 'react-vitae';
 export {
-    AwardsList,
-    BasicsSection,
-    EducationList,
-    InterestsList,
-    LanguagesList,
-    ProjectsList,
-    PublicationsList,
-    References,
-    Skills,
-    VolunteerList,
-    WorkList,
+  AwardsList,
+  BasicsSection,
+  EducationList,
+  InterestsList,
+  LanguagesList,
+  ProjectsList,
+  PublicationsList,
+  References,
+  Skills,
+  VolunteerList,
+  WorkList,
 } from 'react-vitae-bulma-theme';
 
 export const App = () => (
-    <ResumeProvider resume={resume}>
-        {/* Include any of hte imported components here */}
-    </ResumeProvider>
+  <ResumeProvider resume={resume}>{/* Include any of hte imported components here */}</ResumeProvider>
 );
 ```
 

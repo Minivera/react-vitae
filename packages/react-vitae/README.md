@@ -1,7 +1,8 @@
 # React vitae
+
 ![npm](https://img.shields.io/npm/v/react-vitae.svg) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-vitae.svg)
 
-`react-vitae` is a set of strongly typed and battle tested React components and hooks that enable you to connect a [json-resume](https://github.com/jsonresume/resume-schema) schema to your components and build great looking resumes from a standardized schema. 
+`react-vitae` is a set of strongly typed and battle tested React components and hooks that enable you to connect a [json-resume](https://github.com/jsonresume/resume-schema) schema to your components and build great looking resumes from a standardized schema.
 
 ## Installation
 
@@ -86,8 +87,8 @@ All hocs will add a new prop to the augmented component named after the type in 
 ```jsx harmony
 import { withResume } from 'react-vitae';
 
-const Component = ({ resume }) => { 
-    // ...
+const Component = ({ resume }) => {
+  // ...
 };
 
 export default withResume(Component);
@@ -116,11 +117,11 @@ They will all execute the render prop function with an object containing the res
 import { WithResume } from 'react-vitae';
 
 export const Component = () => (
-    <WithResume>
-        {({ resume }) => {
-            // ...
-        }}
-    </WithResume>
+  <WithResume>
+    {({ resume }) => {
+      // ...
+    }}
+  </WithResume>
 );
 ```
 

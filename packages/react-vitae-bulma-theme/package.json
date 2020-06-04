@@ -1,6 +1,6 @@
 {
   "name": "react-vitae-bulma-theme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The Bulma Theme for react-vitae, build resumes using the bloomer framework and react-vitae.",
   "repository": {
     "type": "git",

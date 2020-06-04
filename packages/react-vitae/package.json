@@ -1,6 +1,6 @@
 {
   "name": "react-vitae",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Build a personal resume in seconds with JSON resumes and React",
   "repository": {
     "type": "git",

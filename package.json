@@ -1,6 +1,5 @@
 {
   "name": "react-vitae",
-  "version": "1.0.0",
   "description": "Connect resumes written in JSON with Resume.json and React",
   "scripts": {
     "publish": "lerna publish",

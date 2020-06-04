@@ -1,6 +1,6 @@
 {
   "name": "react-vitae",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build a personal resume in seconds with JSON resumes and React",
   "repository": {
     "type": "git",
@@ -39,7 +39,9 @@
     "collectCoverageFrom": [
       "src/**/*.{ts,tsx}"
     ],
-    "setupFiles": ["@testing-library/react/dont-cleanup-after-each"]
+    "setupFiles": [
+      "@testing-library/react/dont-cleanup-after-each"
+    ]
   },
   "gitHead": "7852d3819e85fb4d2909fa41792ec8a03ae6fccd"
 }

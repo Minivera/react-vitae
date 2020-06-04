@@ -1,6 +1,6 @@
 {
   "name": "react-vitae-material-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Material Theme for react-vitae, build resumes using the material-ui framework and react-vitae.",
   "repository": {
     "type": "git",
@@ -43,7 +43,9 @@
     "collectCoverageFrom": [
       "src/**/*.{ts,tsx}"
     ],
-    "setupFiles": ["@testing-library/react/dont-cleanup-after-each"]
+    "setupFiles": [
+      "@testing-library/react/dont-cleanup-after-each"
+    ]
   },
   "gitHead": "7852d3819e85fb4d2909fa41792ec8a03ae6fccd"
 }

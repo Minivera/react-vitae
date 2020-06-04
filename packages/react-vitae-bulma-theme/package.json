@@ -47,5 +47,8 @@
       "@testing-library/react/dont-cleanup-after-each"
     ]
   },
-  "gitHead": "7852d3819e85fb4d2909fa41792ec8a03ae6fccd"
+  "gitHead": "7852d3819e85fb4d2909fa41792ec8a03ae6fccd",
+  "devDependencies": {
+    "react-vitae": "^1.0.2"
+  }
 }

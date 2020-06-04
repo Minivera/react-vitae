@@ -53,5 +53,8 @@
     "ts-jest": "^26.1.0",
     "tsdx": "^0.13.2",
     "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.2"
   }
 }

@@ -33,7 +33,7 @@
     "@types/react-dom": "16.8.4"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=17"
   },
   "jest": {
     "collectCoverageFrom": [

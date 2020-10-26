@@ -36,8 +36,8 @@
   },
   "peerDependencies": {
     "bloomer": "^0.6.5",
-    "react": ">=16",
-    "react-vitae": "^1.0.0"
+    "react": ">=17",
+    "react-vitae": "^1.0.2"
   },
   "jest": {
     "collectCoverageFrom": [

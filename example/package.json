@@ -7,16 +7,16 @@
     "lint": "eslint 'src/**/*.{js,ts,jsx,tsx}'"
   },
   "devDependencies": {
-    "parcel": "^1.12.4"
+    "parcel": "^2.0.0-nightly.432"
   },
   "gitHead": "7852d3819e85fb4d2909fa41792ec8a03ae6fccd",
   "dependencies": {
-    "@material-ui/core": "^4.10.1",
+    "@material-ui/core": "^4.11.0",
     "bloomer": "^0.6.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-vitae": "^1.0.0",
-    "react-vitae-bulma-theme": "^1.0.0",
-    "react-vitae-material-theme": "^1.0.0"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-vitae": "^1.0.2",
+    "react-vitae-bulma-theme": "^1.0.2",
+    "react-vitae-material-theme": "^1.0.2"
   }
 }

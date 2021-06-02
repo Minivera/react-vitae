@@ -1,12 +1,12 @@
 {
     "extends": [
         "standard",
+        "prettier",
+        "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
-        "prettier/@typescript-eslint",
         "plugin:import/typescript",
         "plugin:jest/recommended"
     ],
-    "plugins": ["standard", "react", "@typescript-eslint", "prettier", "jest"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "jsx": true,
@@ -15,7 +15,7 @@
     },
     "rules": {
         "no-var": "error", // optional, recommended when using es6+
-        "no-unused-vars": 1, // recommended
+        "no-unused-vars": 0,
         "arrow-spacing": ["error", { "before": true, "after": true }], // recommended
         "comma-dangle": [
             "error",
@@ -30,13 +30,10 @@
 
         // options to emulate prettier setup
         "semi": ["error", "always"],
-        "max-len": ["error", { "code": 120 }],
+        "max-len": "off",
         "template-curly-spacing": ["error", "never"],
         "arrow-parens": ["error", "as-needed"],
         "indent": "off",
-
-        // Enable prettier errors
-        "prettier/prettier": "error",
 
         // standard.js
         "space-before-function-paren": [
@@ -48,15 +45,18 @@
             }
         ],
 
-        // standard plugin - options
-        "standard/object-curly-even-spacing": ["error", "either"],
-        "standard/array-bracket-even-spacing": ["error", "either"],
-        "standard/computed-property-even-spacing": ["error", "even"],
-        "standard/no-callback-literal": ["error", ["cb", "callback"]],
+        // Typescript
+        "@typescript-eslint/no-empty-function": "off",
+
+        // note you must disable the base rule as it can report incorrect errors
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error"],
 
         // react plugin - options
         "react/jsx-uses-react": "error",
-        "react/jsx-uses-vars": "error"
+        "react/jsx-uses-vars": "error",
+        "react/prop-types": "off",
+        "react/display-name": "off"
     },
     "settings": {
         "import/parsers": {

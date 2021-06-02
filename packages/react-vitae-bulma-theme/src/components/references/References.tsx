@@ -31,7 +31,7 @@ export const References: React.FunctionComponent = (): React.ReactElement | null
         <Content>
           {references.map(
             (reference: Reference, index: number): React.ReactElement => (
-              <React.Fragment>
+              <React.Fragment key={index}>
                 {reference.reference && <blockquote key={`quote_${index}`}>{reference.reference}</blockquote>}
                 <span style={styles.name} key={`name_${index}`}>
                   {reference.name}

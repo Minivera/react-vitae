@@ -24,7 +24,7 @@ export const References: React.FunctionComponent = (): React.ReactElement | null
         <TableBody>
           {references.map(
             (reference: Reference): React.ReactElement => (
-              <TableRow>
+              <TableRow key={reference.name}>
                 <TableCell>
                   <b>{reference.name}</b>
                 </TableCell>

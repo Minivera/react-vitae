@@ -43,7 +43,14 @@ export const Profiles: React.FunctionComponent = (): React.ReactElement | null =
       <Box display="flex" flexWrap="wrap" justifyContent="space-around" marginTop={3} marginBottom={3}>
         {basic.profiles.map(
           (profile: Profile): React.ReactElement => (
-            <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" margin={1}>
+            <Box
+              display="flex"
+              flexDirection="column"
+              justifyContent="center"
+              alignItems="center"
+              margin={1}
+              key={profile.url}
+            >
               <div className={classes.iconBlock}>
                 <Icon fontSize="large" className={`fab fa-${profile.network}`} />
               </div>

@@ -73,7 +73,7 @@ export const ProjectsList: React.FunctionComponent = (): React.ReactElement | nu
                 <ul>
                   {item.highlights.map(
                     (highlight: string): React.ReactElement => (
-                      <li>
+                      <li key={highlight}>
                         <Typography variant="body2">{highlight}</Typography>
                       </li>
                     )

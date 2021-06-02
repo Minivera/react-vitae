@@ -75,7 +75,7 @@ export const Contact: React.FunctionComponent<ContactProps> = ({
       {url && url.length && (
         <Subtitle isSize={6} isSpaced>
           <Icon isSize="small" className="fas fa-link" style={styles.iconStyle} />
-          <a href={url} target="_blank">
+          <a href={url} target="_blank" rel="noreferrer">
             {url}
           </a>
         </Subtitle>

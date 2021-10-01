@@ -99,7 +99,7 @@ Object.keys(hooks).forEach((hookName: string): void =>
         try {
           contextValue = information.runner();
         } catch (e) {
-          error = e;
+          error = e as Error;
         }
 
         return null;

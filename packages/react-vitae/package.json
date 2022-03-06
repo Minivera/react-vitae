@@ -7,7 +7,7 @@
     "url": "git+https://github.com/Minivera/react-vitae.git"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production tsdx build",
+    "build": "cross-env NODE_ENV=production tsdx build ./src",
     "lint": "eslint 'src/**/*.{js,ts,jsx,tsx}'",
     "prepublishOnly": "npm run build",
     "test": "tsdx test --env=jsdom",

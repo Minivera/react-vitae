@@ -23,7 +23,7 @@ const useStyles = makeStyles(
       },
       subtitle: {
         color: theme.palette.grey['300'],
-        fontWeight: theme.typography.fontWeightLight,
+        fontWeight: 'lighter',
       },
       subbar: {
         backgroundColor: theme.palette.primary.light,

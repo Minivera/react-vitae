@@ -1,0 +1,19 @@
+name: Lint files and run tests
+
+on: push
+jobs:
+  lint_and_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - name: Install dependencies
+        run: npm ci
+      - name: Run build process
+        run: npm run build
+      - name: Lint fles
+        run: npm run lint
+      - name: Run tests with coverage
+        run: npm run test:coverage
+      - name: Upload coverage to codecov
+        uses: codecov/codecov-action@v2

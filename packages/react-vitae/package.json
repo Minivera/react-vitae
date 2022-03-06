@@ -28,20 +28,8 @@
   ],
   "author": "Guillaume St-Pierre",
   "license": "MIT",
-  "resolutions": {
-    "@types/react": "16.8.17",
-    "@types/react-dom": "16.8.4"
-  },
   "peerDependencies": {
     "react": ">=17"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{ts,tsx}"
-    ],
-    "setupFiles": [
-      "@testing-library/react/dont-cleanup-after-each"
-    ]
   },
   "gitHead": "7852d3819e85fb4d2909fa41792ec8a03ae6fccd"
 }

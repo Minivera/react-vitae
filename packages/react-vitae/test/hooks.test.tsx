@@ -91,26 +91,14 @@ Object.keys(hooks).forEach((hookName: string): void =>
       return contextValue;
     };
 
-    const runBadContext = (root = false): { contextValue: unknown; error: Error | null } => {
-      let contextValue: unknown;
-      let error: Error | null = null;
-
+    const runBadContext = () => {
       const Tester = (): null => {
-        try {
-          contextValue = information.runner();
-        } catch (e) {
-          error = e as Error;
-        }
+        information.runner();
 
         return null;
       };
 
-      render(
-        <ResumeProvider resume={root ? undefined : { basic: mockResume.basic }}>
-          <Tester />
-        </ResumeProvider>
-      );
-      return { contextValue, error };
+      render(<Tester />);
     };
 
     it('Return the resume from the given context if it exists', (): void => {
@@ -120,13 +108,7 @@ Object.keys(hooks).forEach((hookName: string): void =>
     });
 
     it('Throws an error when called with an invalid context', (): void => {
-      if (hookName === 'useResume') {
-        expect(runBadContext(true).error).toBeDefined();
-      } else if (hookName === 'useBasic') {
-        expect(runBadContext().contextValue).toEqual(information.expect);
-      } else {
-        expect(runBadContext().contextValue).toBe(undefined);
-      }
+      expect(() => runBadContext()).toThrow();
     });
   })
 );

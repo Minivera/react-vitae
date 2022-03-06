@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import * as React from 'react';
 import { render } from '@testing-library/react';
 
@@ -21,7 +22,7 @@ import { mockResume } from './mocks';
 
 const components: {
   [s: string]: {
-    component: (props: any) => React.ReactElement<unknown>;
+    component: (props: never) => React.ReactElement<unknown>;
     expect: unknown;
   };
 } = {
@@ -86,6 +87,8 @@ Object.keys(components).forEach((componentName: string): void =>
 
       render(
         <ResumeProvider resume={mockResume}>
+          {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+          {/* @ts-ignore */}
           <Component>
             {(value: { [s: string]: unknown } | null): null => {
               contextValue = value;
@@ -101,9 +104,7 @@ Object.keys(components).forEach((componentName: string): void =>
       const resumeValue = runContext();
 
       expect(resumeValue).not.toBeNull();
-      if (resumeValue) {
-        expect(resumeValue[Object.keys(resumeValue)[0]]).toEqual(information.expect);
-      }
+      expect(resumeValue![Object.keys(resumeValue!)[0]]).toEqual(information.expect);
     });
   })
 );

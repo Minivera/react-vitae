@@ -263,3 +263,51 @@ export interface Resume {
   // Specify career projects
   projects?: Project[];
 }
+
+export interface ResumeProps {
+  resume: Resume;
+}
+
+export interface BasicProps {
+  basic: Basic;
+}
+
+export interface WorkProps {
+  work: Work[];
+}
+
+export interface VolunteerProps {
+  volunteer: Volunteer[];
+}
+
+export interface EducationProps {
+  education: Education[];
+}
+
+export interface AwardsProps {
+  awards: Award[];
+}
+
+export interface PublicationsProps {
+  publications: Publication[];
+}
+
+export interface SkillsProps {
+  skills: Skill[];
+}
+
+export interface InterestsProps {
+  interests: Interest[];
+}
+
+export interface ReferencesProps {
+  references: Reference[];
+}
+
+export interface LanguagesProps {
+  languages: Language[];
+}
+
+export interface ProjectsProps {
+  projects: Project[];
+}

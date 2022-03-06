@@ -19,12 +19,12 @@
     "strictNullChecks": true,
     "target": "esnext",
     "jsx": "react",
-    "types": ["node", "jest"],
+    "types": ["node", "jest", "react"],
     "paths": {
       "*": ["node_modules/*"],
       "react-vitae": ["src/"]
     }
   },
-  "include": ["src", "types"],
+  "include": ["src", "types", "test"],
   "exclude": ["node_modules", "dist"]
 }

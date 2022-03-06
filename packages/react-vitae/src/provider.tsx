@@ -3,7 +3,7 @@ import React, { createContext } from 'react';
 import { Resume } from './types';
 
 export interface ProviderParams {
-  resume: Resume | undefined;
+  resume: Resume;
 }
 
 export const ResumeContext = createContext<Partial<ProviderParams>>({});

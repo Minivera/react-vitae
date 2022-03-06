@@ -1,0 +1,3 @@
+ignore:
+  - "packages/react-vitae-bulma-theme"
+  - "packages/react-vitae-material-theme"

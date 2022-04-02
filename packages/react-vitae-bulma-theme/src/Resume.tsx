@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section, Container, Tile, Columns, Footer, Content } from 'bloomer';
-import { Resume as ResumeType, ResumeProvider } from 'react-vitae';
+import { Resume, ResumeProvider } from 'react-vitae';
 
 import { BasicsSection } from './components/basics';
 import { Skills } from './components/skills';
@@ -14,11 +14,11 @@ import { PublicationsList } from './components/publications';
 import { LanguagesList } from './components/languages';
 import { InterestsList } from './components/interests';
 
-interface ResumeProps {
-  resume: ResumeType;
+interface ResumeComponentProps {
+  resume: Resume;
 }
 
-export const Resume = ({ resume }: ResumeProps): React.ReactElement<ResumeProps> => (
+export const ResumeComponent = ({ resume }: ResumeComponentProps): React.ReactElement<ResumeComponentProps> => (
   <ResumeProvider resume={resume}>
     <Section key="content">
       <Container>

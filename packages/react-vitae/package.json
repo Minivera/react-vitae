@@ -7,11 +7,14 @@
     "url": "git+https://github.com/Minivera/react-vitae.git"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production tsdx build ./src",
+    "build:dev": "ts-node ../../scripts/build.ts packages/react-vitae",
+    "build:prod": "ts-node ../../scripts/build.ts packages/react-vitae --production",
+    "build:dts": "dts-bundle-generator -o dist/index.d.ts src/index.ts",
+    "build": "rm -rf dist && npm run build:dev && npm run build:dts",
     "lint": "eslint 'src/**/*.{js,ts,jsx,tsx}'",
     "prepublishOnly": "npm run build",
-    "test": "tsdx test --env=jsdom",
-    "test:coverage": "tsdx test --env=jsdom --coverage",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
     "clean": "git clean -fdX ."
   },
   "keywords": [
@@ -20,11 +23,9 @@
     "json-resume"
   ],
   "main": "dist/index.js",
-  "umd:main": "dist/react-vitae.umd.production.js",
-  "module": "dist/react-vitae.es.production.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist/"
+    "dist"
   ],
   "author": "Guillaume St-Pierre",
   "license": "MIT",

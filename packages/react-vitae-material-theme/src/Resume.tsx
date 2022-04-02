@@ -1,5 +1,5 @@
 import React from 'react';
-import { Resume as ResumeType, ResumeProvider } from 'react-vitae';
+import { Resume, ResumeProvider } from 'react-vitae';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
@@ -8,11 +8,11 @@ import { LeftBar } from './components/leftbar';
 import { RightBar } from './components/rightbar';
 import { Footer } from './components/footer';
 
-interface ResumeProps {
-  resume: ResumeType;
+interface ResumeComponentProps {
+  resume: Resume;
 }
 
-export const Resume = ({ resume }: ResumeProps): React.ReactElement<ResumeProps> => (
+export const ResumeComponent = ({ resume }: ResumeComponentProps): React.ReactElement<ResumeComponentProps> => (
   <ResumeProvider resume={resume}>
     <TopBar />
     <Container fixed>

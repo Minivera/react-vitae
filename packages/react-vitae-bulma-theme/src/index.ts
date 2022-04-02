@@ -1,4 +1,4 @@
-export { Resume } from './Resume';
+export { ResumeComponent } from './Resume';
 export { AwardsList } from './components/awards';
 export { BasicsSection } from './components/basics';
 export { EducationList } from './components/education';

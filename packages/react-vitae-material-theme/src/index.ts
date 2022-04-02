@@ -1,4 +1,4 @@
-export { Resume } from './Resume';
+export { ResumeComponent } from './Resume';
 export { Profiles } from './components/profiles';
 export { Personal } from './components/personal';
 export { Skills } from './components/skills';

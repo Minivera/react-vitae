@@ -1,14 +1,14 @@
 {
-  "name": "react-vitae-bulma-theme",
+  "name": "react-vitae-material-theme",
   "version": "1.0.7",
-  "description": "The Bulma Theme for react-vitae, build resumes using the bloomer framework and react-vitae.",
+  "description": "DEPRECATED: The Material Theme for react-vitae, build resumes using the material-ui framework and react-vitae.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Minivera/react-vitae.git"
   },
   "scripts": {
-    "build:dev": "ts-node ../../scripts/build.ts packages/react-vitae-bulma-theme",
-    "build:prod": "ts-node ../../scripts/build.ts packages/react-vitae-bulma-theme --production",
+    "build:dev": "ts-node ../../scripts/build.ts packages/react-vitae-material-theme",
+    "build:prod": "ts-node ../../scripts/build.ts packages/react-vitae-material-theme --production",
     "build:dts": "dts-bundle-generator -o dist/index.d.ts src/index.ts",
     "build": "rm -rf dist && npm run build:dev && npm run build:dts",
     "lint": "eslint 'src/**/*.{js,ts,jsx,tsx}'",
@@ -19,7 +19,7 @@
     "react",
     "resume",
     "json-resume",
-    "bulma",
+    "material-ui",
     "theme"
   ],
   "main": "dist/index.js",
@@ -29,14 +29,15 @@
   ],
   "author": "Guillaume St-Pierre",
   "license": "MIT",
-  "resolutions": {
-    "@types/react": "16.8.17",
-    "@types/react-dom": "16.8.4"
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "react": "^16.8.17",
+    "react-dom": "^16.8.4",
+    "react-vitae": "^1.0.7"
   },
-  "peerDependencies": {
-    "bloomer": "^0.6.5",
-    "react": ">=17",
-    "react-vitae": "^1.0.2"
+  "devDependencies": {
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -45,9 +46,5 @@
     "setupFiles": [
       "@testing-library/react/dont-cleanup-after-each"
     ]
-  },
-  "gitHead": "484532fc4bea32256072fde2bee599ecbceae98f",
-  "devDependencies": {
-    "react-vitae": "^1.0.7"
   }
 }

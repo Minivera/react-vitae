@@ -125,26 +125,22 @@ export const Component = () => (
 
 ## Themes
 
-React-Vitae includes two ready made themes to quickly create resumes with. These themes export a main `Resume` component as well as a smaller set of components to allow you to assemble your resume yourself.
+React-Vitae previously included two ready made themes to quickly create resumes with. These themes are deprecated and are only kept for reference.
 
 See each theme's readme for instruction on usage and how to install them.
 
-* [react-vitae-bulma-theme](/packages/react-vitae-bulma-theme)
-* [react-vitae-material-theme](/packages/react-vitae-material-theme)
+* [react-vitae-bulma-theme](/themes/react-vitae-bulma-theme)
+* [react-vitae-material-theme](/themes/react-vitae-material-theme)
 
 ### Help needed
 
-The created templates are still work in progress at this moment. I am not a designer and they look somewhat passable, but help to make them look good would be very appreciated. Feel free to create a PR to improve the look of both templates.
+Any Pull Request will be reviewed and merged if it looks good, all help is appreciated!
 
 ## Development
 
-### Lerna
-
-This project uses [lerna](https://github.com/lerna/lerna) to manage its monorepo, see the lerna documentation for more commands.
-
 ### Installing the dependencies
 
-Running `npm bootstrap` in the project's root directory will install everything you need for development.
+Running `npm install` in the project's root directory will install everything you need for development.
 
 ### Running Lint
 
@@ -156,4 +152,4 @@ Running `npm bootstrap` in the project's root directory will install everything 
 
 ### Publishing
 
-Publishing is done automatically through travis.
+Publishing is done manually at the moment using the `npm publish` command.

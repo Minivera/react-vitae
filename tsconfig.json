@@ -28,6 +28,6 @@
       "module": "commonjs"
     }
   },
-  "include": ["packages/**/*", "example/**/*", "**/*.test.ts", "scripts/*.ts"],
+  "include": ["src/**/*", "types/**/*", "example/**/*", "**/*.test.ts", "scripts/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

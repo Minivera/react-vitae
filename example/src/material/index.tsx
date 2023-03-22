@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { render } from 'react-dom';
 
+// @ts-expect-error
 import { Resume } from 'react-vitae-material-theme';
 import { resume } from '../resume';
 

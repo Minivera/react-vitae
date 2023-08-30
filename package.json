@@ -37,7 +37,7 @@
     "react": ">=17"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.0",
     "@types/yargs": "^17.0.23",

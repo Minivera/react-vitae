@@ -2,7 +2,7 @@
 ![GitHub](https://img.shields.io/github/license/minivera/react-vitae.svg)
 ![GitHub stars](https://img.shields.io/github/stars/minivera/react-vitae.svg?style=social)
 [![Build Status](https://travis-ci.com/Minivera/react-vitae.svg?branch=master)](https://travis-ci.com/Minivera/react-vitae)
-[![codecov](https://codecov.io/gh/minivera/react-vitae/branch/master/graph/badge.svg)](https://codecov.io/gh/minivera/react-vitae)
+[![codecov](https://codecov.io/gh/Minivera/react-vitae/graph/badge.svg?token=QnUMjBaLK3)](https://codecov.io/gh/Minivera/react-vitae)
 
 `react-vitae` is a set of strongly typed and battle tested React components and hooks that enable you to connect a [json-resume](https://github.com/jsonresume/resume-schema) schema to your components and build great looking resumes from a standardized schema. 
 
@@ -14,7 +14,7 @@ You can install `react-vitae` with NPM or Yarn.
 
 ## Usage
 
-The main `react-vitae` package includes the [TypeScript types](/packages/react-vitae/src/types.ts) for the standard JSON resume schema and a set of components.
+The main `react-vitae` package includes the [TypeScript types](src/types.ts) for the standard JSON resume schema and a set of components.
 
 ### Writing the resume file
 
@@ -37,7 +37,7 @@ import { ResumeProvider } from 'react-vitae';
 
 const resume = {};
 
-export const App => (
+export const App = () => (
     <ResumeProvider resume={resume}>
         {/* Your application goes here */}
     </ResumeProvider>
@@ -48,18 +48,18 @@ export const App => (
 
 The package exports a set of custom hooks to retrieve the resume or part of it.
 
-- `useResume` retrieves the main [resume](/packages/react-vitae/src/types.ts#L232).
-- `useBasic` retrieves the [basic resume information](/packages/react-vitae/src/types.ts#L29).
-- `useWork` retrieves the [work experiences](/packages/react-vitae/src/types.ts#L58).
-- `useVolunteer` retrieves the [volunteer experiences](/packages/react-vitae/src/types.ts#L87).
-- `useEducation` retrieves the [education information](/packages/react-vitae/src/types.ts#L110).
-- `useAwards` retrieves the [list of awards](/packages/react-vitae/src/types.ts#L133).
-- `usePublications` retrieves the [list of publications](/packages/react-vitae/src/types.ts#L147).
-- `useSkills` retrieves the [list of skills](/packages/react-vitae/src/types.ts#L164).
-- `useLanguages` retrieves the [list of languages](/packages/react-vitae/src/types.ts#L175).
-- `useInterests` retrieves the [list of interests](/packages/react-vitae/src/types.ts#L183).
-- `useReferences` retrieves the [list of professional references](/packages/react-vitae/src/types.ts#L191).
-- `useProjects` retrieves the [list of projects](/packages/react-vitae/src/types.ts#L200).
+- `useResume` retrieves the main [resume](src/types.ts#L232).
+- `useBasic` retrieves the [basic resume information](src/types.ts#L29).
+- `useWork` retrieves the [work experiences](src/types.ts#L58).
+- `useVolunteer` retrieves the [volunteer experiences](src/types.ts#L87).
+- `useEducation` retrieves the [education information](src/types.ts#L110).
+- `useAwards` retrieves the [list of awards](src/types.ts#L133).
+- `usePublications` retrieves the [list of publications](src/types.ts#L147).
+- `useSkills` retrieves the [list of skills](src/types.ts#L164).
+- `useLanguages` retrieves the [list of languages](src/types.ts#L175).
+- `useInterests` retrieves the [list of interests](src/types.ts#L183).
+- `useReferences` retrieves the [list of professional references](src/types.ts#L191).
+- `useProjects` retrieves the [list of projects](src/types.ts#L200).
 
 All have the same signature: `useElement(): type` and return type specific type they represent.
 
@@ -67,18 +67,18 @@ All have the same signature: `useElement(): type` and return type specific type 
 
 The package exports a set of hocs to retrieve the resume or part of it and inject them in an augmented component.
 
-- `withResume` retrieves the main [resume](/packages/react-vitae/src/types.ts#L232).
-- `withBasic` retrieves the [basic resume information](/packages/react-vitae/src/types.ts#L29).
-- `withWork` retrieves the [work experiences](/packages/react-vitae/src/types.ts#L58).
-- `withVolunteer` retrieves the [volunteer experiences](/packages/react-vitae/src/types.ts#L87).
-- `withEducation` retrieves the [education information](/packages/react-vitae/src/types.ts#L110).
-- `withAwards` retrieves the [list of awards](/packages/react-vitae/src/types.ts#L133).
-- `withPublications` retrieves the [list of publications](/packages/react-vitae/src/types.ts#L147).
-- `withSkills` retrieves the [list of skills](/packages/react-vitae/src/types.ts#L164).
-- `withLanguages` retrieves the [list of languages](/packages/react-vitae/src/types.ts#L175).
-- `withInterests` retrieves the [list of interests](/packages/react-vitae/src/types.ts#L183).
-- `withReferences` retrieves the [list of professional references](/packages/react-vitae/src/types.ts#L191).
-- `withProjects` retrieves the [list of projects](/packages/react-vitae/src/types.ts#L200).
+- `withResume` retrieves the main [resume](src/types.ts#L232).
+- `withBasic` retrieves the [basic resume information](src/types.ts#L29).
+- `withWork` retrieves the [work experiences](src/types.ts#L58).
+- `withVolunteer` retrieves the [volunteer experiences](src/types.ts#L87).
+- `withEducation` retrieves the [education information](src/types.ts#L110).
+- `withAwards` retrieves the [list of awards](src/types.ts#L133).
+- `withPublications` retrieves the [list of publications](src/types.ts#L147).
+- `withSkills` retrieves the [list of skills](src/types.ts#L164).
+- `withLanguages` retrieves the [list of languages](src/types.ts#L175).
+- `withInterests` retrieves the [list of interests](src/types.ts#L183).
+- `withReferences` retrieves the [list of professional references](src/types.ts#L191).
+- `withProjects` retrieves the [list of projects](src/types.ts#L200).
 
 All hocs will add a new prop to the augmented component named after the type in lowercase, for example.
 
@@ -96,18 +96,18 @@ export default withResume(Component);
 
 The package exports a set of components to retrieve the resume or part of it and use them with the render prop pattern.
 
-- `WithResume` retrieves the main [resume](/packages/react-vitae/src/types.ts#L232).
-- `WithBasic` retrieves the [basic resume information](/packages/react-vitae/src/types.ts#L29).
-- `WithWork` retrieves the [work experiences](/packages/react-vitae/src/types.ts#L58).
-- `WithVolunteer` retrieves the [volunteer experiences](/packages/react-vitae/src/types.ts#L87).
-- `WithEducation` retrieves the [education information](/packages/react-vitae/src/types.ts#L110).
-- `WithAwards` retrieves the [list of awards](/packages/react-vitae/src/types.ts#L133).
-- `WithPublications` retrieves the [list of publications](/packages/react-vitae/src/types.ts#L147).
-- `WithSkills` retrieves the [list of skills](/packages/react-vitae/src/types.ts#L164).
-- `WithLanguages` retrieves the [list of languages](/packages/react-vitae/src/types.ts#L175).
-- `WithInterests` retrieves the [list of interests](/packages/react-vitae/src/types.ts#L183).
-- `WithReferences` retrieves the [list of professional references](/packages/react-vitae/src/types.ts#L191).
-- `WithProjects` retrieves the [list of projects](/packages/react-vitae/src/types.ts#L200).
+- `WithResume` retrieves the main [resume](src/types.ts#L232).
+- `WithBasic` retrieves the [basic resume information](src/types.ts#L29).
+- `WithWork` retrieves the [work experiences](src/types.ts#L58).
+- `WithVolunteer` retrieves the [volunteer experiences](src/types.ts#L87).
+- `WithEducation` retrieves the [education information](src/types.ts#L110).
+- `WithAwards` retrieves the [list of awards](src/types.ts#L133).
+- `WithPublications` retrieves the [list of publications](src/types.ts#L147).
+- `WithSkills` retrieves the [list of skills](src/types.ts#L164).
+- `WithLanguages` retrieves the [list of languages](src/types.ts#L175).
+- `WithInterests` retrieves the [list of interests](src/types.ts#L183).
+- `WithReferences` retrieves the [list of professional references](src/types.ts#L191).
+- `WithProjects` retrieves the [list of projects](src/types.ts#L200).
 
 They will all execute the render prop function with an object containing the resume element named after the retreived type in lowercase, for example.
 

@@ -44,7 +44,7 @@
     "@typescript-eslint/eslint-plugin": "^6.7.3",
     "@typescript-eslint/parser": "^6.7.3",
     "cross-env": "^7.0.3",
-    "dts-bundle-generator": "^8.0.1",
+    "dts-bundle-generator": "^9.0.0",
     "esbuild": "^0.19.3",
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",

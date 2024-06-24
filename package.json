@@ -1,6 +1,6 @@
 {
   "name": "react-vitae",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Build a personal resume in seconds with JSON resumes and React",
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
     "resume",
     "json-resume"
   ],
-  "main": "dist/index.js",
+  "main": "dist/index.esm.mjs",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
